@@ -5,6 +5,32 @@ import TextAnimation from "./UI/TextAnimation";
 import { useState } from "react";
 import Image from "next/image";
 
+// Custom Image component with loading skeleton
+const ProjectImage = ({ src, alt, width, height }: { src: string; alt: string; width: number; height: number }) => {
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    return (
+        <div className="relative w-full h-auto overflow-hidden">
+            {/* Loading skeleton */}
+            {!isLoaded && (
+                <div className="absolute inset-0 bg-gradient-to-r from-neutral-200 via-neutral-300 to-neutral-200 animate-pulse rounded-lg"
+                    style={{ aspectRatio: `${width}/${height}` }} />
+            )}
+
+            {/* Actual image */}
+            <Image
+                src={src}
+                alt={alt}
+                className={`w-full h-auto transition-opacity duration-300 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+                width={width}
+                height={height}
+                priority
+                onLoad={() => setIsLoaded(true)}
+            />
+        </div>
+    );
+};
+
 export default function Project() {
     const [expandedProject, setExpandedProject] = useState<number | null>(null);
 
@@ -70,12 +96,10 @@ export default function Project() {
                                         {project.images && project.images.length > 0 && (
                                             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                                                 {project.images.map((image, imgIndex) => (
-                                                    <Image
+                                                    <ProjectImage
                                                         key={imgIndex}
                                                         src={image}
                                                         alt={`${project.title} image ${imgIndex + 1}`}
-                                                        className="w-full h-auto self-stretch"
-                                                        priority
                                                         width={500}
                                                         height={300}
                                                     />
