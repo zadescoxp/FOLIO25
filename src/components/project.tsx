@@ -12,7 +12,7 @@ export default function Project() {
 
             <div className="flex flex-col w-full mt-16 sm:mt-24 md:mt-32 lg:mt-48">
                 {projects.map((project, index) => (
-                    <motion.div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center justify-between border-b-[1px] border-neutral-950 py-3 sm:py-2 relative group px-2" key={index}
+                    <motion.div className="w-full grid grid-cols-1 lg:grid-cols-3 items-center justify-between border-b-[1px] border-neutral-950 py-3 sm:py-2 relative group px-2" key={index}
                         initial={{ clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)" }}
                         whileInView={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", transition: { duration: 1.25 } }}
                         viewport={{ once: true }}

@@ -40,7 +40,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            <TextAnimate by="character" duration={1} once={true} className="font-climate-crisis text-[6rem] sm:text-[8rem] md:text-[11rem] lg:text-[20rem] xl:text-[25rem] 2xl:text-[30rem] text-center w-full leading-tight mt-8 sm:mt-12 md:mt-16 lg:mt-20 whitespace-nowrap">ZADE</TextAnimate>
+            <TextAnimate by="character" duration={1} once={true} className="font-climate-crisis text-[6rem] sm:text-[8rem] md:text-[11rem] lg:text-[15rem] xl:text-[20rem] 2xl:text-[25rem] text-center w-full leading-tight mt-8 sm:mt-12 md:mt-16 lg:mt-20 whitespace-nowrap">ZADE</TextAnimate>
         </div>
     )
 }
