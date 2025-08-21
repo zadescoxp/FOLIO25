@@ -5,22 +5,22 @@ import { MagicCard } from "./magicui/magic-card"
 
 export default function Testimonials() {
     return (
-        <div className="bg-neutral-950 text-white w-screen px-10 mt-48 pb-48">
-            <div className="text-[4.5rem] leading-none font-semibold w-2/3 pt-48">
+        <div className="bg-neutral-950 text-white w-screen px-4 sm:px-6 md:px-8 lg:px-10 mt-16 sm:mt-24 md:mt-32 lg:mt-48 pb-16 sm:pb-24 md:pb-32 lg:pb-48">
+            <div className="text-2xl sm:text-3xl md:text-4xl lg:text-[4.5rem] leading-none font-semibold w-full sm:w-5/6 md:w-3/4 lg:w-2/3 pt-16 sm:pt-24 md:pt-32 lg:pt-48">
                 <TextAnimation text="Behind every line of code and design choice, there’s trust" className="text-shadow-lg" />
             </div>
-            <TextAnimation className="mt-10" text="Some clients prefer their projects to remain private, but their words speak louder than any portfolio ever could." />
-            <div className="mt-48 grid grid-cols-3 items-center flex-wrap gap-10 w-full">
+            <TextAnimation className="mt-6 sm:mt-8 md:mt-10 text-sm sm:text-base" text="Some clients prefer their projects to remain private, but their words speak louder than any portfolio ever could." />
+            <div className="mt-16 sm:mt-24 md:mt-32 lg:mt-48 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-stretch flex-wrap gap-6 sm:gap-8 md:gap-10 w-full">
 
                 {testimonials.map((testimonial, index) => (
-                    <div className="bg-neutral-900 text-white self-stretch gap-y-10 p-10 relative rounded-xl flex items-start justify-between flex-col" key={index}>
+                    <div className="bg-neutral-900 text-white self-stretch gap-y-6 sm:gap-y-8 md:gap-y-10 p-6 sm:p-8 md:p-10 relative rounded-xl flex items-start justify-between flex-col" key={index}>
                         <ShineBorder shineColor={["#fff", "#eee"]} duration={index + 10} />
-                        <TextAnimation text={`"${testimonial.feedback}"`} className="text-lg italic" />
+                        <TextAnimation text={`"${testimonial.feedback}"`} className="text-sm sm:text-base md:text-lg italic" />
                         <div className="flex flex-col gap-2">
-                            <TextAnimation text={`- ${testimonial.name}`} className="text-lg font-bold" />
+                            <TextAnimation text={`- ${testimonial.name}`} className="text-sm sm:text-base md:text-lg font-bold" />
                             {testimonial.website && (
                                 <Link href={testimonial.website} target="_blank" rel="noopener noreferrer" className="hover:underline transition-all duration-300">
-                                    <TextAnimation text="Visit Website" className="text-sm" />
+                                    <TextAnimation text="Visit Website" className="text-xs sm:text-sm" />
                                 </Link>
                             )}
                         </div>

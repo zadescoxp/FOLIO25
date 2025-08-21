@@ -13,8 +13,8 @@ export default function Loading() {
                 transition: { duration: 1, delay: 2.5 }
             }}
         >
-            <TextAnimate by="character" duration={1} className='font-climate-crisis text-[25rem] text-white'>ZADE</TextAnimate>
-            <TextAnimate by='character' duration={1} className='text-white font-semibold text-2xl'>@FOLIO 25</TextAnimate>
+            <TextAnimate by="character" duration={1} className='font-climate-crisis text-[6rem] sm:text-[12rem] md:text-[16rem] lg:text-[20rem] xl:text-[25rem] 2xl:text-[30rem] text-white whitespace-nowrap'>ZADE</TextAnimate>
+            <TextAnimate by='character' duration={1} className='text-white font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl'>@FOLIO 25</TextAnimate>
         </motion.div>
     )
 }

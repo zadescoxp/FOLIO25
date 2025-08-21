@@ -12,13 +12,13 @@ import { motion } from "motion/react";
 
 export default function Footer() {
     return (
-        <div className="w-full px-10 bg-neutral-950 text-white pt-48">
-            <div className="flex items-start justify-between">
-                <Card className="bg-neutral-900 text-white border-none py-10 px-3 rounded-xl w-1/2 relative">
+        <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 bg-neutral-950 text-white pt-16 sm:pt-24 md:pt-32 lg:pt-48">
+            <div className="flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-0">
+                <Card className="bg-neutral-900 text-white border-none py-6 sm:py-8 md:py-10 px-3 sm:px-4 md:px-6 rounded-xl w-full lg:w-1/2 xl:w-2/5 relative">
                     <ShineBorder shineColor={["#fff", "#eee"]} duration={10} />
                     <CardHeader>
-                        <CardTitle className="text-xl font-semibold">Contact Me</CardTitle>
-                        <CardDescription>
+                        <CardTitle className="text-lg sm:text-xl md:text-2xl font-semibold">Contact Me</CardTitle>
+                        <CardDescription className="text-sm sm:text-base">
                             Let me know what you are looking for, and I will get back to you as soon as possible.
                         </CardDescription>
                     </CardHeader>
@@ -28,19 +28,19 @@ export default function Footer() {
                     </CardContent>
                 </Card>
 
-                <div className="flex flex-col items-end justify-center gap-2 self-end">
-                    <span className="flex flex-col items-end gap-2 text-4xl font-climate-crisis">
+                <div className="flex flex-col items-start lg:items-end justify-center gap-2 self-start lg:self-end w-full lg:w-auto">
+                    <span className="flex flex-col items-start lg:items-end gap-2 text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-climate-crisis">
                         {linkList.map((link, index) => (
                             <Link key={index} href={link.href} className={link.className}>
                                 {link.children}
                             </Link>
                         ))}
                     </span>
-                    <TextAnimation text="Copyright © 2025 Zade" className="text-lg" />
+                    <TextAnimation text="Copyright © 2025 Zade" className="text-sm sm:text-base md:text-lg" />
                 </div>
             </div>
 
-            <TextAnimate by="character" duration={1} once={true} className="font-climate-crisis text-[25rem] text-center w-full leading-tight">ZADE</TextAnimate>
+            <TextAnimate by="character" duration={1} once={true} className="font-climate-crisis text-[6rem] sm:text-[12rem] md:text-[16rem] lg:text-[20rem] xl:text-[25rem] 2xl:text-[30rem] text-center w-full leading-tight mt-8 sm:mt-12 md:mt-16 lg:mt-20 whitespace-nowrap">ZADE</TextAnimate>
         </div>
     )
 }
@@ -81,10 +81,10 @@ const Form = () => {
         }
     }
     return (
-        <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-            <div className="flex flex-col gap-6">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4 sm:gap-6">
+            <div className="flex flex-col gap-4 sm:gap-6">
                 <div className="grid gap-2">
-                    <Label htmlFor="name">Name</Label>
+                    <Label htmlFor="name" className="text-sm sm:text-base">Name</Label>
                     <Input
                         id="name"
                         type="text"
@@ -92,13 +92,13 @@ const Form = () => {
                         required
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        className="p-5"
+                        className="p-3 sm:p-4 md:p-5 text-sm sm:text-base"
                     />
                 </div>
             </div>
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-4 sm:gap-6">
                 <div className="grid gap-2">
-                    <Label htmlFor="email">Email</Label>
+                    <Label htmlFor="email" className="text-sm sm:text-base">Email</Label>
                     <Input
                         id="email"
                         type="email"
@@ -106,13 +106,13 @@ const Form = () => {
                         required
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        className="p-5"
+                        className="p-3 sm:p-4 md:p-5 text-sm sm:text-base"
                     />
                 </div>
             </div>
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-4 sm:gap-6">
                 <div className="grid gap-2">
-                    <Label htmlFor="message">Message</Label>
+                    <Label htmlFor="message" className="text-sm sm:text-base">Message</Label>
                     <Input
                         id="message"
                         type="text"
@@ -120,12 +120,12 @@ const Form = () => {
                         required
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
-                        className="p-5"
+                        className="p-3 sm:p-4 md:p-5 text-sm sm:text-base"
                     />
                 </div>
             </div>
 
-            <AnimatedSubscribeButton className={`${loading ? "bg-gray-300 cursor-progress text-neutral-950" : "bg-white text-neutral-950"} ${!(name && email && message) ? "bg-gray-300 cursor-not-allowed" : "bg-white"}`} disabled={!(name && email && message)} type="submit">
+            <AnimatedSubscribeButton className={`${loading ? "bg-gray-300 cursor-progress text-neutral-950" : "bg-white text-neutral-950"} ${!(name && email && message) ? "bg-gray-300 cursor-not-allowed" : "bg-white"} text-sm sm:text-base py-3 sm:py-4`} disabled={!(name && email && message)} type="submit">
                 <span>{!(name && email && message) ? `Complete the form` : `Send`}</span>
                 <span>{loading ? "Sending..." : `Sent`}</span>
             </AnimatedSubscribeButton>

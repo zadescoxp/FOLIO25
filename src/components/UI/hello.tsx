@@ -36,7 +36,7 @@ export function ConfettiFireworks({ children }: { children: React.ReactNode }) {
 
     return (
         <div className="relative">
-            <Button onClick={handleClick} className="bg-white text-neutral-950 hover:bg-white shadow-none text-lg font-semibold cursor-pointer">{children}</Button>
+            <Button onClick={handleClick} className="bg-white text-neutral-950 hover:bg-white shadow-none text-sm sm:text-base md:text-lg lg:text-xl font-semibold cursor-pointer px-3 sm:px-4 md:px-6 py-2 sm:py-3">{children}</Button>
         </div>
     );
 }
