@@ -5,9 +5,10 @@ import {
   Bodoni_Moda,
   Climate_Crisis,
 } from "next/font/google";
-// import localFont from "next/font/local";
 import "./globals.css";
 import Lenis from "@/utils/lenis";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -53,6 +54,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${bodoniModa.variable} ${ClimateCrisis.variable} antialiased`}
       >
         <Lenis>{children}</Lenis>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
