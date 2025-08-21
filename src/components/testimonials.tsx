@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { ShineBorder } from "./magicui/shine-border"
 import TextAnimation from "./UI/TextAnimation"
-import { MagicCard } from "./magicui/magic-card"
 
 export default function Testimonials() {
     return (

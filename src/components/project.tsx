@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import TextAnimation from "./UI/TextAnimation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 
 export default function Project() {
