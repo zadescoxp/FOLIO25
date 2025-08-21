@@ -74,7 +74,7 @@ export default function Project() {
                                     className="overflow-hidden border-b-[1px] border-neutral-950"
                                 >
                                     <div className="px-2 py-4 sm:py-6 bg-white">
-                                        <p className="text-sm sm:text-base md:text-3xl w-2/3 font-semibold leading-tight text-neutral-700 mb-4">
+                                        <p className="text-sm sm:text-base md:text-3xl w-full lg:w-2/3 font-semibold leading-tight text-neutral-700 mb-4">
                                             {project.description}
                                         </p>
                                         <span className="flex flex-col gap-2">
