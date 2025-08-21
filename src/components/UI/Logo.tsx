@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { TextAnimate } from "../magicui/text-animate";
+import TextAnimation from "./TextAnimation";
 
-export default function Logo ({className} : {className?: string}) {
+export default function Logo({ className }: { className?: string }) {
   return (
     <Link href="/" className={`font-climate-crisis ${className}`}>
-        <TextAnimate animation="slideUp" by="word" duration={1}>ZADE</TextAnimate>
+      <TextAnimation text="ZADE" />
     </Link>
   );
 }
