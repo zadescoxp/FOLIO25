@@ -1,9 +1,5 @@
 module.exports = {
   images: {
-    remotePatterns: [
-      new URL(
-        "https://us-east-1.tixte.net/uploads/happy.with-your.mom/main.jpg"
-      ),
-    ],
+    remotePatterns: [new URL('https://pub-2c7c82dc6e1b454aa49b18934e696d3d.r2.dev/**'), new URL('https://images.pexels.com/photos/**')],
   },
-};
+}
