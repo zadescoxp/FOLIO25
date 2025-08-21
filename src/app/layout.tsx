@@ -34,9 +34,12 @@ const ClimateCrisis = Climate_Crisis({
 });
 
 export const metadata: Metadata = {
-  title: "Zade Scoxp",
+  title: "Zade",
   description:
-    "I'm Zade, a creative technologist passionate about design, development, and exploring new technologies. I love turning ideas into clean, functional experiences, and when I'm not building, I'm into football, music, and innovating just for fun.",
+    "I build random shit !!!",
+  openGraph: {
+    images: ["https://pub-2c7c82dc6e1b454aa49b18934e696d3d.r2.dev/Portfolio%20Meta%20Image.png"]
+  }
 };
 
 export default function RootLayout({
