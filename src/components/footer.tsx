@@ -14,8 +14,8 @@ export default function Footer() {
     return (
         <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 bg-neutral-950 text-white pt-16 sm:pt-24 md:pt-32 lg:pt-48">
             <div className="flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-0">
-                <Card className="bg-neutral-900 text-white border-none py-6 sm:py-8 md:py-10 px-3 sm:px-4 md:px-6 rounded-xl w-full lg:w-1/2 xl:w-2/5 relative">
-                    <ShineBorder shineColor={["#fff", "#eee"]} duration={10} />
+                <Card className="bg-neutral-900 border-4 border-neutral-800 text-white py-6 sm:py-8 md:py-10 px-3 sm:px-4 md:px-6 rounded-xl w-full lg:w-1/2 xl:w-2/5 relative">
+                    {/* <ShineBorder shineColor={["#fff", "#eee"]} duration={10} /> */}
                     <CardHeader>
                         <CardTitle className="text-lg sm:text-xl md:text-2xl font-semibold">Contact Me</CardTitle>
                         <CardDescription className="text-sm sm:text-base">
