@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { ShineBorder } from "./magicui/shine-border"
 import TextAnimation from "./UI/TextAnimation"
 
 export default function Testimonials() {
@@ -13,7 +12,6 @@ export default function Testimonials() {
 
                 {testimonials.map((testimonial, index) => (
                     <div className="border-neutral-800 border-4 bg-neutral-900 text-white self-stretch gap-y-6 sm:gap-y-8 md:gap-y-10 p-6 sm:p-8 md:p-10 relative rounded-xl flex items-start justify-between flex-col" key={index}>
-                        {/* <ShineBorder shineColor={["#fff", "#eee"]} duration={index + 10} /> */}
                         <TextAnimation text={`"${testimonial.feedback}"`} className="text-sm sm:text-base md:text-lg italic" />
                         <div className="flex flex-col gap-2">
                             <TextAnimation text={`- ${testimonial.name}`} className="text-sm sm:text-base md:text-lg font-bold" />
