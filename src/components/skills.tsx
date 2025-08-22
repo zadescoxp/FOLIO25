@@ -4,7 +4,7 @@ export default function Skills() {
     return (
         <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10">
             <div className="text-2xl sm:text-3xl md:text-4xl lg:text-[4.5rem] leading-none font-semibold w-full sm:w-5/6 md:w-3/4 lg:w-2/3 mt-16 sm:mt-24 md:mt-32 lg:mt-48">
-                <TextAnimation text="Skills I’ve honed to deliver results for my clients" className="text-shadow-lg" />
+                <TextAnimation text="Skills I’ve honed to deliver results for my clients" />
             </div>
 
             <div className="">

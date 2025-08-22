@@ -9,7 +9,7 @@ export default function Hero() {
     </div>
 
     <div className="text-2xl sm:text-3xl md:text-4xl lg:text-[4.5rem] xl:text-[5rem] 2xl:text-[5.5rem] leading-none font-semibold w-full sm:w-5/6 md:w-3/4 lg:w-2/3 mt-16 sm:mt-24 md:mt-32 lg:mt-48 xl:mt-52">
-      <TextAnimation text="Full-stack developer crafting clean, impactful and creative products" className="text-shadow-lg" />
+      <TextAnimation text="Full-stack developer crafting clean, impactful and creative products" />
     </div>
 
     <div className="mt-16 sm:mt-24 md:mt-32 lg:mt-48 xl:mt-52 w-full">

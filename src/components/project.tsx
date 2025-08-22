@@ -41,7 +41,7 @@ export default function Project() {
     return (
         <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10">
             <div className="text-2xl sm:text-3xl md:text-4xl lg:text-[4.5rem] leading-none font-semibold w-full sm:w-5/6 md:w-3/4 lg:w-2/3 mt-16 sm:mt-24 md:mt-32 lg:mt-48">
-                <TextAnimation text="A glimpse into the products I’ve built and shipped." className="text-shadow-lg" />
+                <TextAnimation text="A glimpse into the products I’ve built and shipped." />
             </div>
             <TextAnimation className="mt-6 sm:mt-8 md:mt-10 text-sm sm:text-base" text="Some clients prefer their projects to remain private, but you can visit their site to explore more about my contributions." />
             <div className="flex flex-col w-full mt-16 sm:mt-24 md:mt-32 lg:mt-48">
