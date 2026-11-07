@@ -11,11 +11,29 @@ const pixel = Pixelify_Sans({ variable: "--font-pixel", subsets: ["latin"] });
 const text = Inter_Tight({ variable: "--font-text", subsets: ["latin"] });
 const mono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
+const title = "Zade";
+const description = "AI Engineer based in Bengaluru. Folio@26.";
+
+// The share image itself comes from opengraph-image.png and twitter-image.png in this
+// folder. metadataBase turns their paths into the full URLs that platforms require.
 export const metadata: Metadata = {
-  title: "Zade",
-  description: "AI Engineer based in Bengaluru. Folio@26.",
+  metadataBase: new URL("https://zadescoxp.com"),
+  title,
+  description,
+  alternates: { canonical: "/" },
   openGraph: {
-    images: ["https://pub-2c7c82dc6e1b454aa49b18934e696d3d.r2.dev/Portfolio%20Meta%20Image.png"],
+    type: "website",
+    url: "/",
+    siteName: title,
+    title,
+    description,
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@zadescoxp",
+    title,
+    description,
   },
 };
 
