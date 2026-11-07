@@ -536,27 +536,8 @@ a {
 
 /* Emoji window: the size of the screen, because the animation is the point. */
 .emoji-window {
-  /* The largest square that fits the screen under the title bar. */
-  --stage: max(420px, min(calc(100svh - var(--gutter) * 2 - 96px), 60vw));
-  display: flex;
-  flex-direction: column;
-  padding: 0 clamp(8px, 0.9vw, 14px) clamp(8px, 0.9vw, 14px);
-  border: 1px solid #55554f;
-  background: #1b1d1f;
-}
-
-.emoji-bar {
-  flex: none;
-  display: flex;
-  gap: 5px;
-  padding: 10px 0;
-}
-
-.emoji-bar i {
-  width: 9px;
-  height: 9px;
-  border: 1px solid #8a8a83;
-  border-radius: 50%;
+  /* The largest square that fits the screen. */
+  --stage: max(420px, min(calc(100svh - var(--gutter) * 2 - 56px), 60vw));
 }
 
 .emoji-body {

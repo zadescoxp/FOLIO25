@@ -256,9 +256,6 @@ export default function EmojiWindow() {
 
   return (
     <div className="emoji-window" role="img" aria-label="Animated pixel emoji: skull, smile, fire, sunglasses and robot">
-      <div className="emoji-bar" aria-hidden="true">
-        <i /><i /><i />
-      </div>
       <div className="emoji-body" aria-hidden="true">
         <div className="emoji-panel">
           <p ref={wordsRef} className="emoji-words" />
