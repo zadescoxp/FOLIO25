@@ -1,0 +1,199 @@
+[
+  {
+    "title": "TFT Finance",
+    "category": "Machine learning",
+    "client": "Personal",
+    "year": 2026,
+    "description": "A local research desk for daily equity forecasts. One Temporal Fusion Transformer decodes the next 252 trading sessions, with a 10–90% price band and a long-or-flat call after costs.",
+    "links": [
+      {
+        "label": "See on GitHub",
+        "url": "https://github.com/zadescoxp/Temporal-Fusion-Transformer-Price-Prediction"
+      }
+    ],
+    "video": "/work/tft/video.mp4",
+    "images": [
+      "/work/tft/1.webp",
+      "/work/tft/2.webp",
+      "/work/tft/3.webp",
+      "/work/tft/4.webp"
+    ]
+  },
+  {
+    "title": "Order Flow",
+    "category": "Market data terminal",
+    "client": "Open source",
+    "year": 2026,
+    "description": "A free, open source terminal for studying executed volume, price distribution and liquidity in real time, across crypto and selected forex pairs.",
+    "links": [
+      {
+        "label": "See website",
+        "url": "https://order-flow.zadescoxp.com"
+      },
+      {
+        "label": "See on GitHub",
+        "url": "https://github.com/zadescoxp/order-flow-screener"
+      }
+    ],
+    "video": "/work/order-flow/video.mp4",
+    "images": [
+      "/work/order-flow/1.webp",
+      "/work/order-flow/2.webp",
+      "/work/order-flow/3.webp",
+      "/work/order-flow/4.webp"
+    ]
+  },
+  {
+    "title": "Jev Trades",
+    "category": "Autonomous trading",
+    "client": "Personal",
+    "year": 2026,
+    "description": "A live crypto dashboard where the Jev agent, powered by TypeSafe, reads the market on every tick and trades a paper portfolio, with automatic take profit and stop loss.",
+    "links": [
+      {
+        "label": "See website",
+        "url": "https://jev-trades.vercel.app"
+      },
+      {
+        "label": "See on GitHub",
+        "url": "https://github.com/zadescoxp/Jev-Trades"
+      }
+    ],
+    "video": "/work/jev/video.mp4",
+    "images": [
+      "/work/jev/1.webp",
+      "/work/jev/2.webp",
+      "/work/jev/3.webp",
+      "/work/jev/4.webp"
+    ]
+  },
+  {
+    "title": "Keep",
+    "category": "AI infrastructure",
+    "client": "Kade & Co",
+    "year": 2026,
+    "description": "The storage layer for AI agents. Every agent gets its own private workspace with KV, SQL, files and objects.",
+    "links": [
+      {
+        "label": "See website",
+        "url": "https://keep.kadeandco.xyz"
+      }
+    ],
+    "images": [
+      "/work/keep/1.webp",
+      "/work/keep/2.webp",
+      "/work/keep/3.webp"
+    ]
+  },
+  {
+    "title": "Made By Mac",
+    "category": "Design, Development",
+    "client": "Made By Mac",
+    "year": 2025,
+    "description": "A personal portfolio site built for a client to showcase their past works and future project plans. Designed for easy navigation and scalability so they can update it seamlessly over time.",
+    "links": [
+      {
+        "label": "See website",
+        "url": "https://madebymac.design"
+      }
+    ],
+    "images": [
+      "/work/mac/1.webp",
+      "/work/mac/2.webp",
+      "/work/mac/3.webp"
+    ]
+  },
+  {
+    "title": "Iota Labs",
+    "category": "Development",
+    "client": "Iota Labs",
+    "year": 2025,
+    "description": "A landing page for an AI agents agency focused on automation solutions for finance institutions in the EU market. Designed with a professional, trust-focused aesthetic tailored to the fintech audience.",
+    "links": [
+      {
+        "label": "See website",
+        "url": "https://iotalabs.ai"
+      }
+    ],
+    "images": [
+      "/work/iota-labs/1.webp",
+      "/work/iota-labs/2.webp",
+      "/work/iota-labs/3.webp"
+    ]
+  },
+  {
+    "title": "Omorofia",
+    "category": "Design",
+    "client": "Omorofia",
+    "year": 2025,
+    "description": "Luxury beauty brand UI design in Figma. Crafted a modern, high-end aesthetic emphasizing elegance and minimalism to reflect the brand's premium positioning.",
+    "links": [],
+    "images": [
+      "/work/omorofia/1.webp",
+      "/work/omorofia/2.webp",
+      "/work/omorofia/3.webp"
+    ]
+  },
+  {
+    "title": "Vouz",
+    "category": "Design, Development",
+    "client": "Personal",
+    "year": 2025,
+    "description": "A SaaS product for secure file-sharing. Reached 2,000+ users in just 48 hours of launch. Designed and built with speed, reliability, and trust at its core to handle global scale effortlessly.",
+    "links": [
+      {
+        "label": "See website",
+        "url": "https://vouz.tech"
+      }
+    ],
+    "images": [
+      "/work/vouz/1.webp",
+      "/work/vouz/2.webp",
+      "/work/vouz/3.webp"
+    ]
+  },
+  {
+    "title": "Inline Edits",
+    "category": "Design",
+    "client": "Inline Edits",
+    "year": 2024,
+    "description": "A video editing studio website design. Focused on delivering a creative yet professional look, highlighting their services and past projects to attract new clients.",
+    "links": [],
+    "images": [
+      "/work/inline-edits/1.webp",
+      "/work/inline-edits/2.webp",
+      "/work/inline-edits/3.webp"
+    ]
+  },
+  {
+    "title": "Holz",
+    "category": "Design",
+    "client": "Holz",
+    "year": 2024,
+    "description": "UI design for a German furniture brand. Built with a clean, functional layout that balances elegance and usability to showcase their handcrafted furniture collections.",
+    "links": [],
+    "images": [
+      "/work/holz/1.webp",
+      "/work/holz/2.webp",
+      "/work/holz/3.webp"
+    ]
+  },
+  {
+    "title": "La Mode",
+    "category": "Design, Development",
+    "client": "La Mode",
+    "year": 2024,
+    "description": "Website for a fashion modeling agency. Designed and developed the entire site with a stylish, bold aesthetic that reflects the vibrance and energy of the fashion industry.",
+    "links": [
+      {
+        "label": "See website",
+        "url": "https://lamode.vercel.app"
+      }
+    ],
+    "images": [
+      "/work/la-mode/1.webp",
+      "/work/la-mode/2.webp",
+      "/work/la-mode/3.webp"
+    ]
+  }
+]
