@@ -1,0 +1,96 @@
+<!doctype html>
+<!--
+  Source for the social share image (src/app/opengraph-image.png). 1200 x 630.
+  Everything important sits in the centre 630 x 630, because WhatsApp, iMessage and
+  some LinkedIn views crop to a square. Render it with:
+
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new \
+    --hide-scrollbars --window-size=1200,630 --force-device-scale-factor=1 \
+    --virtual-time-budget=5000 --screenshot=src/app/opengraph-image.png \
+    "file://$PWD/scripts/meta-image.html"
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400&family=Great+Vibes&family=Instrument+Serif&family=Pixelify+Sans:wght@500&display=block" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; background: #111110; }
+  body { position: relative; color: #f1f0ec; font-family: "Instrument Serif", serif; }
+
+  .title {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font-size: 70px; line-height: 1.04; letter-spacing: -0.02em; text-transform: uppercase;
+    padding-top: 6px;
+  }
+  .script { font-family: "Great Vibes", cursive; font-size: 1.28em; letter-spacing: 0; line-height: .8; text-transform: none; }
+  .name { font-size: 94px; line-height: 1.02; margin-bottom: 6px; }
+  .pixel { display: flex; align-items: center; gap: 18px; font-family: "Pixelify Sans", monospace; font-weight: 500; font-size: 60px; letter-spacing: .01em; line-height: 1.15; margin: 20px 0 22px; }
+  svg { display: block; shape-rendering: crispEdges; fill: currentColor; }
+  .folio { position: relative; }
+
+  .side { position: absolute; top: 296px; font-family: "Geist Mono", monospace; font-size: 15px; line-height: 1.25; color: #8a8a83; text-transform: uppercase; }
+
+  /* An agent mid-job: frame, label, I-beam and pill, the site's signature. */
+  .frame { position: absolute; border: 2px solid #f1f0ec; background: rgba(255,255,255,.035); }
+  .frame i { position: absolute; width: 11px; height: 11px; border: 2px solid #f1f0ec; border-radius: 50%; background: #111110; }
+  .frame i:nth-child(1) { top: -7px; left: -7px; }
+  .frame i:nth-child(2) { top: -7px; right: -7px; }
+  .frame i:nth-child(3) { bottom: -7px; left: -7px; }
+  .frame i:nth-child(4) { bottom: -7px; right: -7px; }
+  .label { position: absolute; bottom: calc(100% + 5px); left: -2px; padding: 2px 8px; background: #3a3a36; font: 14px "Geist Mono", monospace; white-space: nowrap; }
+  .pill { position: absolute; padding: 2px 11px; border-radius: 13px; background: #fff; color: #111110; font: 14px/20px "Geist Mono", monospace; white-space: nowrap; }
+  .ibeam { position: absolute; width: 11px; height: 28px; }
+  .arrow { position: absolute; width: 17px; height: 20px; }
+</style>
+</head>
+<body>
+  <div class="title">
+    <div class="name"><span class="script">Z</span>ade</div>
+    <div>I build softwares</div>
+    <div class="pixel"><svg id="sunA" width="55" height="55" viewBox="0 0 11 11"></svg>AI Engineer<svg id="sunB" width="55" height="55" viewBox="0 0 11 11"></svg></div>
+    <div>Based in Bengaluru</div>
+    <div class="folio">Folio@26
+      <svg id="cat" width="98" height="70" viewBox="0 0 14 10" style="position:absolute;left:calc(100% + 22px);bottom:12px"></svg>
+      <svg id="fly" width="63" height="42" viewBox="0 0 9 6" style="position:absolute;left:calc(100% + 130px);bottom:32px;color:#8ea2ff"></svg>
+    </div>
+  </div>
+
+  <p class="side" style="left:56px">Claude<br>abuser</p>
+  <p class="side" style="right:56px;text-align:right">Token<br>burner</p>
+
+  <div class="frame" id="frame"><i></i><i></i><i></i><i></i><span class="label">Role&nbsp; 470×68</span></div>
+  <svg class="ibeam" id="ibeam" viewBox="0 0 11 28" style="fill:none;stroke:#fff;stroke-width:2;shape-rendering:auto"><path d="M1 1h9M5.500 1v26M1 27h9"/></svg>
+  <span class="pill" id="pillType">agent-26</span>
+  <svg class="arrow" id="arrow" viewBox="0 0 17 20" style="shape-rendering:auto"><path d="M1 1l14 8.400-6.300 1.300-2.900 6.800z" fill="#fff" stroke="#111110" stroke-width="1.300" stroke-linejoin="round"/></svg>
+  <span class="pill" id="pillBox">agent-07</span>
+
+<script>
+  const paint = (id, rows) => {
+    document.getElementById(id).innerHTML = '<path d="' + rows.flatMap((row, y) =>
+      [...row].map((cell, x) => cell === '#' ? `M${x} ${y}h1v1h-1z` : '')).join('') + '"/>';
+  };
+  const SUN_A = [".....#.....",".....#.....","...........","....###....","...#####...","##.#####.##","...#####...","....###....","...........",".....#.....",".....#....."];
+  const SUN_B = ["#.........#",".#.......#.","...........","....###....","...#####...","...#####...","...#####...","....###....","...........",".#.......#.","#.........#"];
+  paint('sunA', SUN_A);
+  paint('sunB', SUN_B);
+  paint('cat', [".........#...#",".........#####","#........#.#.#",".#.......#####","..###########.","..###########.","...#########..","..##.......##.",".##.........##",".............."]);
+  paint('fly', ["##.....##","###.#.###","#########",".#######.","..##.##..",".##...##."]);
+
+  // Hang the agent's frame on the real position of the AI Engineer line.
+  document.fonts.ready.then(() => {
+    const r = document.querySelector('.pixel').getBoundingClientRect();
+    const frame = document.getElementById('frame');
+    frame.style.cssText = `left:${r.left - 16}px;top:${r.top - 5}px;width:${r.width + 32}px;height:${r.height + 10}px`;
+    frame.querySelector('.label').innerHTML = `Role&nbsp; ${Math.round(r.width + 32)}×${Math.round(r.height + 10)}`;
+    const place = (id, x, y) => { const e = document.getElementById(id); e.style.left = x + 'px'; e.style.top = y + 'px'; };
+    const right = r.right + 16, bottom = r.bottom + 5;
+    place('arrow', right + 8, r.top + 22);
+    place('pillBox', right + 26, r.top + 38);
+    place('ibeam', r.left - 40, r.top + 12);
+    place('pillType', r.left - 118, r.top + 42);
+  });
+</script>
+</body>
+</html>
